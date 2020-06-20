@@ -6,7 +6,7 @@ import subprocess
 
 class InstallBuilderConan(ConanFile):
     name = "installbuilder"
-    version = '20.4.0'
+    # version = '20.4.0'
     url = "https://installbuilder.com"
     homepage = "https://installbuilder.com"
     description = "A powerful and easy to use cross platform installer creation tool"
