@@ -29,11 +29,32 @@ class InstallBuilderConan(ConanFile):
             os.chmod(self._main_download, st.st_mode | stat.S_IEXEC)
 
     def build(self):
-        subprocess.check_call([
-            os.path.join(self.source_folder, self._main_download),
-            '--mode', 'unattended',
-            '--prefix', 'inst', 
-        ])
+        if self.settings.os == 'Macos':
+            try:
+                tools.mkdir('mnt')
+                subprocess.check_call([
+                    '/usr/bin/hdiutil', 'attach', os.path.join(self.source_folder, self._main_download),
+                    '-readonly',
+                    # '-verbose',
+                    '-mountpoint', os.path.join(self.build_folder, 'mnt')
+                ])
+                subprocess.check_call([
+                    os.path.join('mnt', f'installbuilder-qt-enterprise-{self.version}-osx-installer.app','Contents','MacOS','osx-x86_64'),
+                    '--mode', 'unattended',
+                    '--prefix', 'inst', 
+                ])
+            finally:
+                subprocess.check_call([
+                    '/usr/bin/hdiutil', 'detach', os.path.join(self.build_folder, 'mnt'),
+                    # '-verbose',
+                    '-force',
+                ])
+        else:
+            subprocess.check_call([
+                os.path.join(self.source_folder, self._main_download),
+                '--mode', 'unattended',
+                '--prefix', 'inst', 
+            ])
 
     def package(self):
         self.copy("*", src='inst')
@@ -41,6 +62,9 @@ class InstallBuilderConan(ConanFile):
         tools.rmdir(os.path.join(self.package_folder, "docs"))
         tools.rmdir(os.path.join(self.package_folder, "projects"))
         tools.rmdir(os.path.join(self.package_folder, "projects"))
+        if self.settings.os == 'Macos':
+            tools.rmdir(os.path.join(self.package_folder, "uninstall.app"))
+
         # tools.remove_files_by_mask(self.package_folder, 'uninstall*')
         # tools.remove_files_by_mask(self.package_folder, '*.desktop')
 
@@ -57,3 +81,6 @@ class InstallBuilderConan(ConanFile):
         osslsigncode_bin_path = os.path.join(self.package_folder, 'tools', 'osslsigncode','bin')
         self.output.info('Appending PATH environment variable: %s' % osslsigncode_bin_path)
         self.env_info.PATH.append(osslsigncode_bin_path)
+        code_signing_bin_path = os.path.join(self.package_folder, 'tools', 'code-signing','bin')
+        self.output.info('Appending PATH environment variable: %s' % code_signing_bin_path)
+        self.env_info.PATH.append(code_signing_bin_path)
