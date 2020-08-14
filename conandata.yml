@@ -1,14 +1,14 @@
 sources:
   "20.4.0":
     "Linux":
-      sha256: 6839b44d0c757875c280e9a465b4cacc612584d8a5c274eea3bd2dbb040de0ea
+      sha256: 2a28fbedcf616091d84dde502a4ffd699de2a8b09157bdd007a221e99c98677a
       url: https://installbuilder.com/installbuilder-qt-enterprise-20.4.0-linux-x64-installer.run
       filename: installbuilder-qt-enterprise-20.4.0-linux-x64-installer.run
     "Windows":
-      sha256: 8a4f6ef43d31317eef4bedb2b9503ccf82488441836743bb4508be99d76e7853
+      sha256: 82efa08bf363bdb75611f932ebaad3d58fc6c7adfe10cd6432d521a4bd26deb0
       url: https://installbuilder.com/installbuilder-qt-enterprise-20.4.0-windows-x64-installer.exe
       filename: installbuilder-qt-enterprise-20.4.0-windows-x64-installer.exe
     "Macos":
-      sha256: 45f1dada9c02c2976e09e8aa8a9b65767ec53e9328905e3aee6e9876193fc54e
+      sha256: 84c5be280034d08c4cdabf5a8b20f7bff5baf0381af0297a2c6a540e85e91e34
       url: https://installbuilder.com/installbuilder-qt-enterprise-20.4.0-osx-installer.dmg
       filename: installbuilder-qt-enterprise-20.4.0-osx-installer.dmg
