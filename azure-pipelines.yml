@@ -9,7 +9,7 @@ extends:
   template: third-party-library-all-platforms-from-local-recipe.yml@templates
   parameters:
     package: installbuilder
-    package_version: 20.9.0
+    package_version: 20.12.0
     destination_repository: ccdc-3rdparty-conan
     build_types:
       - Release

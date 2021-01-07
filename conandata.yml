@@ -12,3 +12,16 @@ sources:
       sha256: 2cbcda6358848588beb481bc74c6d4f2fd4ee57ec4b8561f7711dcbb4d90d581
       url: https://installbuilder.com/installbuilder-qt-professional-20.9.0-osx-installer.dmg
       filename: installbuilder-qt-professional-20.9.0-osx-installer.dmg
+  "20.12.0":
+    "Linux":
+      sha256: 14cbccc3932f0f1a30f59bbfb1e6106d416cb00e326a04ab62fbfa9133554f8b
+      url: https://installbuilder.com/installbuilder-qt-professional-20.12.0-linux-x64-installer.run
+      filename: installbuilder-qt-professional-20.12.0-linux-x64-installer.run
+    "Windows":
+      sha256: fb6be76b6d6e31f58438ce887ae4ee8b6c54c45aba86ab19c85ddaaa303ade6c
+      url: https://installbuilder.com/installbuilder-qt-professional-20.12.0-windows-x64-installer.exe
+      filename: installbuilder-qt-professional-20.12.0-windows-x64-installer.exe
+    "Macos":
+      sha256: ce84c565dcbe3ab8dfe69c9fd13404a2935a1474570ccd196758bf0998bbce03
+      url: https://installbuilder.com/installbuilder-qt-professional-20.12.0-osx-installer.dmg
+      filename: installbuilder-qt-professional-20.12.0-osx-installer.dmg
