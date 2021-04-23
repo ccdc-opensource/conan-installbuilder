@@ -91,3 +91,7 @@ class InstallBuilderConan(ConanFile):
             code_signing_bin_path = os.path.join(self.package_folder, 'tools', 'code-signing','bin')
             self.output.info('Appending PATH environment variable: %s' % code_signing_bin_path)
             self.env_info.PATH.append(code_signing_bin_path)
+
+    def package_id(self):
+        if self.settings.os == "Macos":
+            del self.info.settings.os.version
