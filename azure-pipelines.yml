@@ -9,12 +9,12 @@ extends:
   template: third-party-library-all-platforms-from-local-recipe.yml@templates
   parameters:
     package: installbuilder
-    package_version: 21.3.0
+    package_version: 21.4.0-bld1
     destination_repository: ccdc-3rdparty-conan
     build_types:
       - Release
     platforms:
-      - centos7_gcc9
+      - centos7_gcc10
       - ubuntu2004_gcc10
-      - macos1015_xcode11
+      - macos1015_xcode12
       - win2019_vs2019

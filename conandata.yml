@@ -38,3 +38,17 @@ sources:
       sha256: c96744968a955c21a300a1a2504e6c0a32a17b693f26d16bcab74dbf0024a446
       url: https://installbuilder.com/installbuilder-qt-professional-21.3.0-osx-installer.dmg
       filename: installbuilder-qt-professional-21.3.0-osx-installer.dmg
+  # This is a debug build provided by VMWare 
+  "21.4.0-bld1":
+    "Linux":
+      sha256: c8ef16845c66ab08d4692f66966a2d4bcf7c80baf2d505bfe9ce861c45043b39
+      url: https://installbuilder.com/latest/5005G00000f8KLWQA2-2/installbuilder-qt-professional-21.3.0-linux-x64-installer.run
+      filename: installbuilder-qt-professional-21.4.0-bld1-linux-x64-installer.run
+    "Windows":
+      sha256: 66d9cfc3ea15a6e913db25807c578a85534795fbda4e2142a27e41b40c54da16
+      url: https://installbuilder.com/latest/5005G00000f8KLWQA2-2/installbuilder-qt-professional-21.3.0-windows-x64-installer.exe
+      filename: installbuilder-qt-professional-21.4.0-bld1-windows-x64-installer.exe
+    "Macos":
+      sha256: e2ed73cc96d6f5e13bc75f4eb1e95e6496d6203d822382b76ba64c05b9f4fe15
+      url: https://installbuilder.com/latest/5005G00000f8KLWQA2-2/installbuilder-qt-professional-21.3.0-osx-installer.dmg
+      filename: installbuilder-qt-professional-21.4.0-bld1-osx-installer.dmg

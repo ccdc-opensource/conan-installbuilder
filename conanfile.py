@@ -39,7 +39,8 @@ class InstallBuilderConan(ConanFile):
                     '-mountpoint', os.path.join(self.build_folder, 'mnt')
                 ])
                 subprocess.check_call([
-                    os.path.join('mnt', f'installbuilder-qt-professional-{self.version}-osx-installer.app','Contents','MacOS','osx-x86_64'),
+                    # os.path.join('mnt', f'installbuilder-qt-professional-{self.version}-osx-installer.app','Contents','MacOS','osx-x86_64'),
+                    os.path.join('mnt', f'installbuilder-qt-professional-21.3.0-osx-installer.app','Contents','MacOS','osx-x86_64'),
                     '--mode', 'unattended',
                     '--prefix', 'inst', 
                 ])
