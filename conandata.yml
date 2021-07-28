@@ -38,3 +38,17 @@ sources:
       sha256: c96744968a955c21a300a1a2504e6c0a32a17b693f26d16bcab74dbf0024a446
       url: https://installbuilder.com/installbuilder-qt-professional-21.3.0-osx-installer.dmg
       filename: installbuilder-qt-professional-21.3.0-osx-installer.dmg
+  # This is a custom build provided by VMWare for autoudate URL
+  "21.7.0-bld1":
+    "Linux":
+      sha256: 9f9195414728ff6549e4697bfd3c8b27db38341e63f3f2a7249f5ed5bc94fa56
+      url: https://installbuilder.com/latest/21242512407/installbuilder-qt-professional-21.6.0-linux-x64-installer.run
+      filename: installbuilder-qt-professional-21.7.0-bld1-linux-x64-installer.run
+    "Windows":
+      sha256: 2286978cff13f3a083bc5b8b18d1b431fa67778d71a388572d0a740ad6a73d7d
+      url: https://installbuilder.com/latest/21242512407/installbuilder-qt-professional-21.6.0-windows-x64-installer.exe
+      filename: installbuilder-qt-professional-21.7.0-bld1-windows-x64-installer.exe
+    "Macos":
+      sha256: e607496d599a7de748ef69ab72595ecb2744efb79ff34068543f3360d4024f3c
+      url: https://installbuilder.com/latest/21242512407/installbuilder-qt-professional-21.6.0-osx-installer.dmg
+      filename: installbuilder-qt-professional-21.7.0-bld1-osx-installer.dmg
