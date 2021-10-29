@@ -52,3 +52,16 @@ sources:
       sha256: e607496d599a7de748ef69ab72595ecb2744efb79ff34068543f3360d4024f3c
       url: https://installbuilder.com/latest/21242512407/installbuilder-qt-professional-21.6.0-osx-installer.dmg
       filename: installbuilder-qt-professional-21.7.0-bld1-osx-installer.dmg
+  "21.9.0":
+    "Linux":
+      sha256: 1505a7609824414fa0674ef381f0da3736cc1c4da3639d7a648ac65bcb94d842
+      url: https://installbuilder.com/installbuilder-qt-professional-21.9.0-linux-x64-installer.run
+      filename: installbuilder-qt-professional-21.9.0-linux-x64-installer.run
+    "Windows":
+      sha256: 1d30804a85c9d2151f5298dbe60e3d4cf397bbcc030eed0e3cd8a1689434ea55
+      url: https://installbuilder.com/installbuilder-qt-professional-21.9.0-windows-x64-installer.exe
+      filename: installbuilder-qt-professional-21.9.0-windows-x64-installer.exe
+    "Macos":
+      sha256: 6c6e967de7ce4bae92b09bc58f2df184024c5370bc694f4643f1e1bb52a98b57
+      url: https://installbuilder.com/installbuilder-qt-professional-21.9.0-osx-installer.dmg
+      filename: installbuilder-qt-professional-21.9.0-osx-installer.dmg
